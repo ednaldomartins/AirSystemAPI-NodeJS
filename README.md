@@ -7,3 +7,5 @@
 1. npm init
 
 2. npm install --save pg
+
+3. npm install --save express
