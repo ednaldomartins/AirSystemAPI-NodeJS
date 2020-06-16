@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-router.route('/')
+router.route('/places')
     .get((req, res) => {
         res.status(200).json(
             {
@@ -17,7 +17,7 @@ router.route('/')
         )
     })
 
-router.route('/:place_id')
+router.route('/places/:place_id')
     .get((req, res) => {
         const id = req.params.place_id
         res.status(200).json(
